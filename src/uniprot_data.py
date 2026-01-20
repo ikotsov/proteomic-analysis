@@ -7,7 +7,7 @@ def fetch_mouse_brain_data():
     # 10090: Mus musculus (Mouse): https://www.uniprot.org/taxonomy/10090
     # reviewed means manually annotated
     query = "taxonomy_id:10090 AND tissue:brain AND reviewed:true"
-    fields = "accession,id,protein_name,go_id"
+    fields = "accession,id,protein_name,go_p,go_c,go_f"
     return get_uniprot_data(query, fields)
 
 
